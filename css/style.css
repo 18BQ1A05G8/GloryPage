@@ -1,0 +1,129 @@
+*{
+    box-sizing: border-box;
+    padding: 0%;
+    margin:0;
+    cursor: context-menu;
+}
+body{
+    background-color: white;
+    position: relative;
+}
+.wrapper{
+    width: 100%;
+    height: 100vh;
+}
+.center{
+    position: absolute;
+    text-align: start;
+    width: 700px;
+    margin:5% 30% 0% 30%;
+    color: rgb(71, 209, 71);
+    opacity: 0.8;
+    line-height: 25px;
+    text-align: center;
+}
+.slant{
+    /* transform: rotateZ(-20deg); */
+    color: goldenrod;
+}
+.center h2{
+    text-align: center;
+    font-size: 35px;
+    font-family: sans-serif;
+    margin-bottom: 4%;
+}
+.center h5{
+    font-size: 15px;
+}
+
+.icon{
+    font-size: 40px;
+}
+.menu{
+    background-color: rgb(185, 118, 118);
+    clip-path: polygon(0 0, 0% 100%, 56% 100%);
+    position: absolute;
+    width: 500px;
+    height: 100vh;
+    display: none;
+    transition: all 1s ease;
+    z-index: 8;
+}
+.active{
+    display: block;
+}
+.menu a{
+    text-decoration: none;
+    color: black;
+    position: absolute;
+}
+.i1{
+    top: 60%;
+    left: 5%;
+}
+.i2{
+    top: 68%;
+    left: 8%;
+}
+.i3{
+    top: 76%;
+    left: 11%;
+}
+.i4{
+    top: 84%;
+    left: 15%;
+}
+a:hover{
+    color: goldenrod;
+}
+.m{
+    font-size: 50px;
+    position: absolute;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    z-index: 9;
+    cursor: pointer;
+    left: 24px;
+    top: 6%;
+    color: goldenrod;
+}
+.M{
+    color: black;
+}
+.big{
+    font-size: 150px;
+    position: absolute;
+    font-family: sans-serif;
+    z-index: 9;
+    top: 0%;
+    color: rgb(71, 209, 71);
+
+}
+.flipH {
+    transform: scale(-1, 1);
+    color: goldenrod;
+    -webkit-transform: scale(-1, 1);
+    transform: scale(-1, 1);
+  }
+  .my{
+      position: absolute;
+      top: 94%;
+      left: 12%;
+      cursor: pointer;
+  }
+  .my:hover{
+      color:rgb(71, 209, 71);
+      transform: scale(1.1);
+  }
+@media screen and (max-width:720px){
+    .center{
+        margin-left: 0%;
+        width: 490px;
+        margin-top: 10%;
+    }
+    .big{
+        top: -5%;
+    }
+    .m{
+        top: 1%;
+    }
+}

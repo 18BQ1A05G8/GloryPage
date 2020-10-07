@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- <script src="jquery.min.js"></script> -->
+    <title>Tilt-Menu</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="burgur">
+            <span class="big">¤</span>
+            <span class="m" onclick="tog()">≡</span> 
+        </div>
+        <!-- ¤ Ö -->
+        <div class="menu">
+            <a href="#" class="i1"><span class="icon">֍</span>  <span class="name">Sphere</span></a> 
+            <a href="#" class="i2"><span class="icon">Ǽ</span>  <span class="name">AE</span></a>
+            <a href="#" class="i3"><span class="icon">₪</span>  <span class="name">Sheqel</span></a>
+            <a href="#" class="i4"><span class="icon">♫</span>  <span class="name">Musical</span></a>
+            <a href="https://github.com/18BQ1A05G8" target="__blank" class="my">BY CHAKRAVARTHI</a>
+        </div>
+        <div class="body-part">
+            <div class="center">
+                <h2>The Glorious Page</h2>
+            <h5>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia natus maiores officiis culpa corporis omnis ratione, perspiciatis aut animi ad voluptates rerum reprehenderit nisi, ex commodi voluptatem repellendus accusamus, maxime labore doloremque saepe? Perferendis modi culpa ipsum reprehenderit maiores? A saepe at dolor, earum ducimus dicta deserunt quisquam, nulla quia repudiandae ullam labore atque incidunt nemo iste rem alias? Reiciendis tempore consequuntur magni, explicabo veniam expedita ex esse cupiditate molestias veritatis, impedit id maiores? Laborum, quasi. Quia vitae voluptate dolorem deleniti harum ut iusto ex molestiae quisquam asperiores sint quas ipsa praesentium rem vel, laudantium id totam magni? Tenetur, nihil.</h5>
+            <br>
+            <h5>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia natus maiores officiis culpa corporis omnis ratione, perspiciatis aut animi ad voluptates rerum reprehenderit nisi, ex commodi voluptatem repellendus accusamus, maxime labore doloremque saepe? Perferendis modi culpa ipsum reprehenderit maiores? A saepe at dolor, earum ducimus dicta deserunt quisquam, nulla quia repudiandae ullam labore atque incidunt nemo iste rem alias? Reiciendis tempore consequuntur magni, explicabo veniam expedita ex esse cupiditate molestias veritatis, impedit id maiores? Laborum, quasi. Quia vitae voluptate dolorem deleniti harum ut iusto ex molestiae quisquam asperiores sint quas ipsa praesentium rem vel, laudantium id totam magni? Tenetur, nihil.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia natus maiores officiis culpa corporis omnis ratione, perspiciatis aut animi ad voluptates rerum repr </h5>
+            <br>
+            </div>
+        </div>
+    </div>
+    <script>
+        function tog(){
+            var menu=document.querySelector('.menu');
+            var big=document.querySelector('.big');
+            var m=document.querySelector('.m');
+            var mid=document.querySelector('.center')
+            if(document.querySelector('.active')==null){
+                menu.classList.add('active');
+                menu.style.transition = "all 1s ease";
+                big.classList.add('flipH')
+                m.classList.add('M')
+                mid.classList.add('slant')
+            }
+            else{
+                menu.classList.remove('active');
+                menu.style.transition = "all 1s ease";
+                big.classList.remove('flipH')
+                m.classList.remove('M')
+                mid.classList.remove('slant')
+            }   
+        }
+        // $(document).ready(function () {
+        //     $('body').bind('cut copy paste', function (e) {
+        //         e.preventDefault();
+        //     });
+        // });
+    </script>
+</body>
+</html>
